@@ -9,7 +9,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
 
-import javax.swing.plaf.basic.BasicBorders.MarginBorder;
 
 
 public class MapInfo {
@@ -60,8 +59,9 @@ public class MapInfo {
 	public static void readMap() {
 
 		try {
-
-			File f = new File("F:\\面向对象程序设计\\作业\\9\\map.txt"); // 此处为地图所在的路径
+			
+			String dir = System.getProperty("user.dir");
+			File f = new File(dir+"//map.txt"); // 此处为地图所在的路径
 			FileReader fr = new FileReader(f);
 			BufferedReader bf = new BufferedReader(fr);
 
@@ -97,7 +97,8 @@ public class MapInfo {
 
 		try {
 
-			File f = new File("F:\\面向对象程序设计\\作业\\9\\map1.txt"); // 此处为地图所在的路径
+			String dir = System.getProperty("user.dir");
+			File f = new File( dir + "//map1.txt"); // 此处为地图所在的路径
 			FileReader fr = new FileReader(f);
 			BufferedReader bf = new BufferedReader(fr);
 
@@ -134,7 +135,8 @@ public class MapInfo {
 	public static void readCross () {
 		try {
 
-			File f = new File("F:\\面向对象程序设计\\作业\\9\\crossinfo.txt"); // 此处为交叉路口信息的存放路径 
+			String dir = System.getProperty("user.dir");
+			File f = new File( dir + "//crossinfo.txt"); // 此处为交叉路口信息的存放路径 
 			FileReader fr = new FileReader(f);
 			BufferedReader bf = new BufferedReader(fr);
 
@@ -168,8 +170,9 @@ public class MapInfo {
 	public static void readCross2 () {
 		
 		try {
-
-			File f = new File("F:\\面向对象程序设计\\作业\\9\\crossinfo1.txt"); // 此处为交叉路口信息所在的路径
+			
+			String dir = System.getProperty("user.dir");
+			File f = new File( dir + "//crossinfo1.txt"); // 此处为交叉路口信息所在的路径
 			FileReader fr = new FileReader(f);
 			BufferedReader bf = new BufferedReader(fr);
 

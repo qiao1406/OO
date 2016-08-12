@@ -8,6 +8,8 @@ public class TaxiSystem {
 	
 	public static void main(String[] args) {
 		
+		System.out.println(System.getProperty("user.dir"));
+		
 		System.out.println("欢迎使用打车系统v3.0");
 		// 载入地图
 		MapInfo.readMap(); // 这个方法读入的地图是含有空格的
