@@ -9,8 +9,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
 
-
-
 public class MapInfo {
 	
 	// Overview： 利用info数组来存储从地图文件中读取的关于地图的信息，用cross数组来存储从文件中读取的交叉路口信息
